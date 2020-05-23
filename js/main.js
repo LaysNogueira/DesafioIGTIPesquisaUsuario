@@ -45,8 +45,11 @@ function searchUsers ()  {
                 user.name.first.indexOf(pesquisa.value.toUpperCase()) > -1 ||
                 user.name.last.indexOf(pesquisa.value.toUpperCase()) > -1 ||
                 user.name.first.indexOf(pesquisa.value.toLowerCase()) > -1 ||
-                user.name.last.indexOf(pesquisa.value.toLowerCase()) > -1 
-                
+                user.name.last.indexOf(pesquisa.value.toLowerCase()) > -1 ||
+                user.name.first.indexOf(pesquisa.value[0].toUpperCase() + pesquisa.value.slice(1)) > -1||
+                user.name.last.indexOf(pesquisa.value[0].toUpperCase() + pesquisa.value.slice(1)) > -1 ||
+                user.name.first.indexOf(pesquisa.value[0].toLowerCase() + pesquisa.value.slice(1)) > -1 ||
+                user.name.last.indexOf(pesquisa.value[0].toLowerCase() + pesquisa.value.slice(1)) > -1                
     });
 
     usersFiltrados.sort((a,b) => {
