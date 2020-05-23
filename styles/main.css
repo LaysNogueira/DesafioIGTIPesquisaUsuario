@@ -1,0 +1,48 @@
+.pesquisa-usuarios .pesquisa {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pesquisa-usuarios .pesquisa input{ 
+    width: 93%;
+    border: none;
+    border-bottom: .5px solid #888888;
+}
+
+.resultado {
+    display: flex;
+    margin-top: 3em;
+}
+.resultado .filtrados, .estatistica {
+    padding: 1em;
+    width: 50%;
+    box-shadow: 2px 2px 2px 2px #888888;
+}
+
+.resultado .filtrados{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2em;
+}
+
+.resultado .estatistica {
+    max-height: 13em;
+}
+
+img{
+    border-radius: 50%;
+    width: 3em;
+    margin: .5em;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.estatisticaList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
